@@ -4,7 +4,7 @@
   "author": "Wizards & Witches @ Work",
   "homepage": "https:/magic.github.io",
   "license": "AGPL-3.0",
-  "description": "foundational theme for programming projects. built for https://magic.github.io",
+  "description": "foundational theme for project presentation. built for https://magic.github.io",
   "main": "src/index.mjs",
   "module": "src/index.mjs",
   "type": "module",
