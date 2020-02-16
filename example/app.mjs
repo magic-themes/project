@@ -1,6 +1,8 @@
 export const state = {
   logotext: '@magic-themes/project',
 
+  branding: ['@', 'project'],
+
   menu: [
     { to: '/#installation', text: 'setup' },
     { to: '/#usage', text: 'usage' },
