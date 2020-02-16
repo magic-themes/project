@@ -1,6 +1,6 @@
 ## @magic-themes/project
 
-the generic project [@magic-theme](https://magic-themes.github.io/).
+foundational [@magic-theme](https://magic-themes.github.io/) for project presentation.
 
 pages this theme is used on:
 [@magic](https://magic.github.io)
