@@ -1,11 +1,44 @@
 export const state = {
-  logotext: '@webboot/theme',
+  logotext: '@magic-themes/project',
 
   menu: [
-    { to: '/#installation', text: 'installation' },
+    { to: '/#installation', text: 'setup' },
     { to: '/#usage', text: 'usage' },
     { to: '/#theme-vars', text: 'theme vars' },
   ],
+  hero: {
+    title: 'hero module',
+    description: 'short branding slogan',
+    menu: [
+      { to: '/#about', text: 'about' },
+      { to: '/#usage', text: 'usage' },
+      { to: '/#theme-vars', text: 'theme vars' },
+    ],
+  },
+  footer: {
+    one: {
+      title: '@magic',
+      before: ['static webapp and api generator.', 'created by', 'Wizards & Witches @ Work'],
+    },
+    two: {
+      title: 'organizations',
+      menu: [
+        { to: 'https://github.com/magic', text: '@magic' },
+        { to: 'https://github.com/magic/core', text: '@magic/core' },
+        { to: 'https://github.com/magic-modules', text: '@magic-modules' },
+        { to: 'https://github.com/magic-libraries', text: '@magic-libraries' },
+        { to: 'https://github.com/magic-themes', text: '@magic-themes' },
+      ],
+    },
+    three: {
+      title: 'social links',
+      menu: [
+        { to: 'https://www.npmjs.com/org/magic', text: 'npm' },
+        { to: 'https://github.com/magic', text: 'github' },
+      ],
+    },
+  },
+
   vars: {
     background: {
       dark: '#212121',
@@ -42,9 +75,9 @@ export const state = {
     fadeDuration: '500ms',
 
     widths: {
-      tablet: 500,
-      laptop: 1024,
-      desktop: 1600,
+      tablet: '500px',
+      laptop: '1024px',
+      desktop: '1600px',
     },
   },
 }

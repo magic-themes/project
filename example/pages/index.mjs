@@ -1,10 +1,22 @@
-export const View = state =>
+export const View = state => [
+  Hero(state),
+
   div([
-    h1('@webboot/magic-theme'),
+    h2({ id: 'about' }, 'about'),
+
     p([
       'this is the ',
       Link({ to: 'https://github.com/magic-themes' }, '@magic-themes'),
-      ' webboot theme. It is being used as the foundational theme for all @webboot pages.',
+      ' project theme. It can be used as the foundational theme for any kind of project.',
+    ]),
+
+    p([
+      'currently, this theme is being used on the following project pages:',
+      ul([
+        li(Link({ to: 'https://magic.github.io' }, '@magic')),
+        li(Link({ to: 'https://webboot.org' }, '@webboot')),
+        li(Link({ to: 'https://grundstein.github.io' }, '@grundstein')),
+      ]),
     ]),
 
     h3({ id: 'installation' }, 'installation'),
@@ -24,5 +36,6 @@ export default {
 
     p('magic will then find and merge the themes automatically, just as it did on this page'),
 
-    div({ id: 'theme-vars' }, ThemeVars(state.vars)),
+    ThemeVars(state.vars),
   ])
+]
