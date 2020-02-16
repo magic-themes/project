@@ -1,3 +1,8 @@
+export * as Logo from './Logo.mjs'
+export * as Header from './Header.mjs'
+export * as Footer from './Footer.mjs'
+export * as Hero from './Hero.mjs'
+
 export const vars = {
   background: {
     dark: '#212121',
@@ -34,9 +39,9 @@ export const vars = {
   fadeDuration: '500ms',
 
   widths: {
-    tablet: 500,
-    laptop: 1024,
-    desktop: 1600,
+    tablet: '500px',
+    laptop: '1024px',
+    desktop: '1600px',
   },
 }
 
@@ -89,6 +94,10 @@ export default (v = {}) => {
     h3: { fontSize: '1.3em' },
     h4: { fontSize: '1.2em' },
     h5: { fontSize: '1.1em', padding: 0 },
+
+    ul: {
+      width: '100%',
+    },
 
     a: {
       color: v.link.dark,
@@ -158,7 +167,7 @@ export default (v = {}) => {
       },
     },
 
-    [`@media screen and (min-width: ${v.widths.tablet}px)`]: {
+    [`@media screen and (min-width: ${v.widths.tablet})`]: {
       '.Menu': {
         float: 'right',
       },
