@@ -1,6 +1,9 @@
 export const View = ({ hero, ...state }) => {
   const title = Array.isArray(hero.title) ? hero.title : [hero.title]
 
+  const content = hero.content && Array.isArray(hero.content) ? hero.content : [hero.content]
+
+
   return div({ id: 'hero', class: 'Hero' }, [
     div({ class: 'LogoWrapper' }, [
       Logo(state),
@@ -8,7 +11,7 @@ export const View = ({ hero, ...state }) => {
       hero.description && p(hero.description),
     ]),
 
-    hero.content,
+    content && div({class: 'content' }, content.map(a => p(a))),
 
     hero.menu && Menu({
       items: hero.menu,
@@ -24,6 +27,11 @@ export const style = vars => ({
   position: 'relative',
   maxWidth: 'inherit',
   width: '100%',
+
+  '.content': {
+    clear: 'both',
+    padding: '1.5em 0 0',
+  },
 
   '.LogoWrapper': {
     margin: '0 auto',
