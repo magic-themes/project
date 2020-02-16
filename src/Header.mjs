@@ -1,7 +1,7 @@
 export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { logo, menu, logotext, ...state } = props
+  const { logo, menu, title, root, ...state } = props
   if (!logo && !menu && !logotext) {
     return
   }
@@ -11,29 +11,52 @@ export const View = (props = {}, children = []) => {
     branding = [branding]
   }
 
+  const [first, ...rest] = branding
+
   return header(
     { class: 'Header' },
     div([
-      Link({ to: state.root, class: 'Logo' }, [
-        (logo || logotext) && Logo({ img: logo, text: logotext }),
-        branding && div({ class: 'branding' }, [span(branding[0]), branding[1]]),
-      ]),
+      Logo({ root }),
+      branding && Link({ to: root, class: 'branding' }, [span(first), rest]),
       menu && Menu({ state, items: menu }),
     ]),
   )
 }
 
 export const style = vars => ({
+  padding: '.5em 0 0',
+  width: '100%',
+
+  '.Menu': {
+    display: 'inline-block',
+    width: '100%',
+  },
+
   '.branding': {
+    color: vars.neutral,
     float: 'left',
     fontSize: '1.5em',
     lineHeight: '1',
-    margin: '0.2em 0 0 0.2em',
+    margin: '0.4em 0 0 0.2em',
+    textDecoration: 'none',
 
     span: {
       color: vars.primary.neutral,
       fontSize: '1em',
       margin: '0',
+    },
+  },
+
+  '> div': {
+    margin: '0 auto',
+    maxWidth: '1000px',
+    padding: '0 5%',
+  },
+
+  [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+    '.Menu': {
+      float: 'right',
+      width: 'auto',
     },
   },
 })
