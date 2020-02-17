@@ -99,6 +99,10 @@ export default (v = {}) => {
       width: '100%',
     },
 
+    p: {
+      margin: '0 0 0.4em',
+    },
+
     a: {
       color: v.link.dark,
       transition: `color ${v.fadeDuration}`,
@@ -154,6 +158,10 @@ export default (v = {}) => {
         bottom: '3em',
         right: '0.5em',
       },
+    },
+
+    '.GitBadges': {
+      margin: '1em 0',
     },
 
     [`@media screen and (min-width: ${v.widths.tablet})`]: {
