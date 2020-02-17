@@ -8,6 +8,7 @@ export const state = {
     { to: '/#usage', text: 'usage' },
     { to: '/#theme-vars', text: 'theme vars' },
   ],
+
   hero: {
     title: 'hero module',
     description: 'short branding slogan',
@@ -17,6 +18,7 @@ export const state = {
       { to: '/#theme-vars', text: 'theme vars' },
     ],
   },
+
   footer: {
     one: {
       title: '@magic',

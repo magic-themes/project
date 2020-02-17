@@ -3,7 +3,6 @@ export const View = ({ hero, ...state }) => {
 
   const content = hero.content && Array.isArray(hero.content) ? hero.content : [hero.content]
 
-
   return div({ id: 'hero', class: 'Hero' }, [
     div({ class: 'LogoWrapper' }, [
       Logo(state),
@@ -11,12 +10,17 @@ export const View = ({ hero, ...state }) => {
       hero.description && p(hero.description),
     ]),
 
-    content && div({class: 'content' }, content.map(a => p(a))),
+    content &&
+      div(
+        { class: 'content' },
+        content.map(a => p(a)),
+      ),
 
-    hero.menu && Menu({
-      items: hero.menu,
-      state,
-    }),
+    hero.menu &&
+      Menu({
+        items: hero.menu,
+        state,
+      }),
   ])
 }
 
@@ -98,8 +102,7 @@ export const style = vars => ({
           float: 'left',
           width: '35%',
         },
-      }
-    }
-
+      },
+    },
   },
 })
