@@ -41,7 +41,7 @@ export const style = vars => ({
     margin: '0 auto',
     position: 'relative',
     minWidth: '250px',
-    maxWidth: '300px',
+    maxWidth: '369px',
 
     '.Logo': {
       float: 'none',
