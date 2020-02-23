@@ -1,12 +1,12 @@
 export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { logo, menu, title, root, ...state } = props
+  const { logo, menu, title, ...state } = props
   if (!logo && !menu && !logotext) {
     return
   }
 
-  let { branding } = state
+  let { branding, root } = state
   if (!Array.isArray(branding)) {
     branding = [branding]
   }
