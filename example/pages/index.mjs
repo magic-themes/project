@@ -6,12 +6,12 @@ export const View = state => [
 
     p([
       'this is the ',
-      Link({ to: 'https://github.com/magic-themes' }, '@magic-themes'),
-      ' project theme. It can be used as the foundational theme for any kind of project.',
+      Link({ to: 'https://github.com/magic-themes' }, '@magic-themes/'),
+      'project theme. It can be used as the foundational theme for any kind of project.',
     ]),
 
     p([
-      'currently, this theme is being used on the following project pages:',
+      'currently, this theme is being used on the following pages:',
       ul([
         li(Link({ to: 'https://magic.github.io' }, '@magic')),
         li(Link({ to: 'https://webboot.org' }, '@webboot')),
@@ -20,7 +20,7 @@ export const View = state => [
     ]),
 
     h3({ id: 'installation' }, 'installation'),
-    Pre(`npm install --save --save-exact @webboot/magic-theme`),
+    Pre(`npm install --save --save-exact @magic-themes/project`),
 
     h2({ id: 'usage' }, 'usage'),
 
@@ -31,7 +31,7 @@ export const View = state => [
 
 export default {
   // ... other config
-  THEME: '@webboot/magic-theme',
+  THEME: 'project',
 }`),
 
     p('magic will then find and merge the themes automatically, just as it did on this page'),
