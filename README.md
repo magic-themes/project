@@ -57,5 +57,9 @@ first release
 ##### 0.0.2
 add color to .active Links in Menus
 
-##### 0.0.3 - unreleased
+##### 0.0.3
+* Header correctly propagates state.root downwards to MenuItem
+* theme exports a default state object now
+
+##### 0.0.4 - unreleased
 ...
