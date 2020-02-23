@@ -141,6 +141,12 @@ export default (v = {}) => {
       lineHeight: 1,
       margin: '0.7em 0 0',
       float: 'none',
+
+      'li.active': {
+        '> a': {
+          color: v.primary.neutral,
+        },
+      },
     },
 
     '.LightSwitch': {
