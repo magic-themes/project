@@ -1,7 +1,10 @@
 export const View = ({ hero, ...state }) => {
   const title = Array.isArray(hero.title) ? hero.title : [hero.title]
 
-  const content = hero.content && Array.isArray(hero.content) ? hero.content : [hero.content]
+  let { content } = hero
+  if (content && !Array.isArray(content)) {
+    content = [content]
+  }
 
   return div({ id: 'hero', class: 'Hero' }, [
     div({ class: 'LogoWrapper' }, [
