@@ -44,14 +44,13 @@ export const style = vars => ({
     margin: '0 auto',
     position: 'relative',
     minWidth: '250px',
-    maxWidth: '369px',
+    maxWidth: '600px',
 
     '.Logo': {
       float: 'none',
 
       svg: {
         width: '100%',
-        maxWidth: '200px',
         margin: '0 auto',
         display: 'block',
         float: 'none',
@@ -103,7 +102,18 @@ export const style = vars => ({
       '.Logo': {
         svg: {
           float: 'left',
-          width: '35%',
+          width: '40%',
+        },
+      },
+    },
+  },
+
+  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+    '.LogoWrapper': {
+      '.Logo': {
+        svg: {
+          float: 'left',
+          width: '50%',
         },
       },
     },
