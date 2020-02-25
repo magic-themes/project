@@ -70,7 +70,9 @@ export const vars = {
 
   white: '#ffffff',
 
-  maxWidth: '1000px',
+  maxWidth: '1200px',
+
+  fontSize: '20px',
 
   fadeDuration: '500ms',
 
@@ -97,6 +99,7 @@ export default (v = {}) => {
         'sans-serif',
       ].join(', '),
 
+      fontSize: v.fontSize,
       lineHeight: '2',
     },
 
