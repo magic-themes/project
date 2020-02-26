@@ -17,7 +17,7 @@ export const state = {
   footer: {
     one: {
       title: '@magic',
-      before: ['static webapp and api generator.', 'created by', 'Wizards & Witches @ Work'],
+      before: ['jamstack generator', 'created by', 'Wizards & Witches'],
     },
     two: {
       title: 'organizations',
@@ -71,8 +71,6 @@ export const vars = {
   white: '#ffffff',
 
   maxWidth: '1200px',
-
-  fontSize: '20px',
 
   fadeDuration: '500ms',
 
@@ -215,6 +213,12 @@ export default (v = {}) => {
       },
       '.Logo': {
         float: 'left',
+      },
+    },
+
+    [`@media screen and (min-width: ${v.widths.laptop})`]: {
+      body: {
+        fontSize: '1.25em',
       },
     },
   }
