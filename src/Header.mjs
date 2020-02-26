@@ -37,7 +37,7 @@ export const style = vars => ({
     float: 'left',
     fontSize: '1.5em',
     lineHeight: '1',
-    margin: '0.4em 0 0 0.2em',
+    margin: '5px 0 0 0.2em',
     textDecoration: 'none',
 
     span: {

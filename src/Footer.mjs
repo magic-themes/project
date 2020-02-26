@@ -87,6 +87,8 @@ export const style = vars => ({
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+    fontSize: '0.9em',
+
     '.Child': {
       float: 'left',
       width: '30%',
