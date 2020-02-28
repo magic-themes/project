@@ -61,5 +61,10 @@ add color to .active Links in Menus
 * Header correctly propagates state.root downwards to MenuItem
 * theme exports a default state object now
 
-##### 0.0.4 - unreleased
+##### 0.0.4
+* Logo: Update @magic logo
+* Hero: logo is bigger
+* use markdown for example page
+
+##### 0.0.5 - unreleased
 ...
