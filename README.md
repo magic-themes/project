@@ -66,5 +66,8 @@ add color to .active Links in Menus
 * Hero: logo is bigger
 * use markdown for example page
 
-##### 0.0.5 - unreleased
+##### 0.0.5
+Footer: use Credits module from @magic/core
+
+##### 0.0.6 - unreleased
 ...
