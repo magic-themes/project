@@ -102,7 +102,7 @@ export const style = vars => ({
       '.Logo': {
         svg: {
           float: 'left',
-          width: '40%',
+          width: '45%',
         },
       },
     },
