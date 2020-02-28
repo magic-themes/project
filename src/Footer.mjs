@@ -27,10 +27,7 @@ export const View = (state, children) => {
           ]),
       ]),
 
-      div({ class: 'Credits' }, [
-        'made with a few bits of ',
-        Link({ to: 'https://github.com/magic/core', target: '_blank', rel: 'noopener' }, 'magic'),
-      ]),
+      Credits(state),
       children,
     ]),
   ])
@@ -49,7 +46,7 @@ export const style = vars => ({
     color: vars.background.dark,
   },
 
-  '.Menus, .Credits': {
+  '.Menus': {
     a: {
       color: vars.text.dark,
       textDecoration: 'underline',
@@ -81,10 +78,6 @@ export const style = vars => ({
         float: 'none',
       },
     },
-  },
-
-  '.Credits': {
-    margin: '2em 0 1em',
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
