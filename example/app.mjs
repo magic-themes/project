@@ -40,7 +40,7 @@ export const state = {
 
     white: '#ffffff',
 
-    maxWidth: '1000px',
+    maxWidth: '1200px',
 
     fadeDuration: '500ms',
 
