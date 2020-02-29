@@ -3,29 +3,30 @@ export const View = (state, children) => {
 
   return footer({ class: 'Footer' }, [
     div({ class: 'Container' }, [
-      (one || two || three) && div({ class: 'Menus' }, [
-        one &&
-          div({ class: 'Child Info' }, [
-            one.title && h2(one.title),
-            one.before && one.before.map(a => p(a)),
-            one.menu && ul([one.menu.map(item => li(Link(item)))]),
-            one.after && one.after.map(a => p(a)),
-          ]),
-        two &&
-          div({ class: 'Child' }, [
-            two.title && h2(two.title),
-            two.before && two.before.map(a => p(a)),
-            two.menu && ul([two.menu.map(item => li(Link(item)))]),
-            two.after && two.after.map(a => p(a)),
-          ]),
-        three &&
-          div({ class: 'Child' }, [
-            three.title && h2(three.title),
-            three.before && three.before.map(a => p(a)),
-            three.menu && ul([three.menu.map(item => li(Link(item)))]),
-            three.after && three.after.map(a => p(a)),
-          ]),
-      ]),
+      (one || two || three) &&
+        div({ class: 'Menus' }, [
+          one &&
+            div({ class: 'Child Info' }, [
+              one.title && h2(one.title),
+              one.before && one.before.map(a => p(a)),
+              one.menu && ul([one.menu.map(item => li(Link(item)))]),
+              one.after && one.after.map(a => p(a)),
+            ]),
+          two &&
+            div({ class: 'Child' }, [
+              two.title && h2(two.title),
+              two.before && two.before.map(a => p(a)),
+              two.menu && ul([two.menu.map(item => li(Link(item)))]),
+              two.after && two.after.map(a => p(a)),
+            ]),
+          three &&
+            div({ class: 'Child' }, [
+              three.title && h2(three.title),
+              three.before && three.before.map(a => p(a)),
+              three.menu && ul([three.menu.map(item => li(Link(item)))]),
+              three.after && three.after.map(a => p(a)),
+            ]),
+        ]),
 
       Credits(state),
       children,
