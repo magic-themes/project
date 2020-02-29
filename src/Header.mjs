@@ -2,7 +2,7 @@ export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
   const { logo, menu, title, ...state } = props
-  if (!logo && !menu && !logotext) {
+  if (!logo && !menu) {
     return
   }
 
@@ -64,7 +64,6 @@ export const style = vars => ({
 export const propTypes = {
   Header: [
     { key: 'logo', type: 'string' },
-    { key: 'logotext', type: 'string' },
     { key: 'menu', type: 'array' },
   ],
 }
