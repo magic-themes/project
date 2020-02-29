@@ -74,5 +74,10 @@ add color to .active Links in Menus
 ##### 0.0.5
 Footer: use Credits module from @magic/core
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+* fix: remove logotext from header
+* link color: better visibility for links
+* Footer: only show menu containers if menu exists.
+
+##### 0.0.7 - unreleased
 ...
