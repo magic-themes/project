@@ -49,6 +49,11 @@ export default {
 
 @magic will then import and use the theme automagically.
 
+##### overwrite
+you can overwrite any style in this theme with your own.
+
+create /assets/themes/project/index.mjs, any css there will overwrite the theme css
+
 #### changelog
 
 ##### 0.0.1
