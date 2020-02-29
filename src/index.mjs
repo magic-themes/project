@@ -46,11 +46,11 @@ export const vars = {
   },
 
   link: {
-    dark: 'rebeccapurple',
-    light: 'rebeccapurple',
+    dark: '#8f6ab4',
+    light: '#8f6ab4',
 
     hover: {
-      dark: '#8f6ab4',
+      dark: '#412162',
       light: '#412162',
     },
   },
