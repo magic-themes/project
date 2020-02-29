@@ -3,7 +3,7 @@ export const View = (state, children) => {
 
   return footer({ class: 'Footer' }, [
     div({ class: 'Container' }, [
-      div({ class: 'Menus' }, [
+      (one || two || three) && div({ class: 'Menus' }, [
         one &&
           div({ class: 'Child Info' }, [
             one.title && h2(one.title),
