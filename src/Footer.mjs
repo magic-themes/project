@@ -47,14 +47,12 @@ export const style = vars => ({
     color: vars.background.dark,
   },
 
-  '.Menus': {
-    a: {
-      color: vars.text.dark,
-      textDecoration: 'underline',
+  a: {
+    color: vars.text.dark,
+    textDecoration: 'underline',
 
-      '&:hover': {
-        color: vars.neutral,
-      },
+    '&:hover': {
+      color: vars.background.dark,
     },
   },
 
