@@ -79,5 +79,8 @@ Footer: use Credits module from @magic/core
 * link color: better visibility for links
 * Footer: only show menu containers if menu exists.
 
-##### 0.0.7 - unreleased
+##### 0.0.7
+* Footer: change link colors to be readable.
+
+##### 0.0.8 - unreleased
 ...
