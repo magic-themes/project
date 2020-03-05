@@ -94,5 +94,8 @@ Fix: Header now uses vars.maxWidth, as Footer, Hero and Page do.
 ##### 0.0.10
 add additional org links to footer
 
-##### 0.0.11 - unreleased
+##### 0.0.11
+rename org menu in footer to projects, link to grundstein and webboot.
+
+##### 0.0.12 - unreleased
 ...
