@@ -81,6 +81,7 @@ Footer: use Credits module from @magic/core
 
 ##### 0.0.7
 * Footer: change link colors to be readable.
+* updates for markdown state handling.
 
 ##### 0.0.8 - unreleased
 ...
