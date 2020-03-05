@@ -33,15 +33,15 @@ export const style = vars => ({
   backgroundColor: vars.text && vars.text.dark || '#c4c4c4',
   display: 'inline-block',
   margin: '5vh auto',
-  position: 'relative',
   maxWidth: 'inherit',
+  position: 'relative',
   width: '100%',
 
   '.content': {
     clear: 'both',
-    minWidth: '250px',
     margin: '0 auto',
     maxWidth: '600px',
+    minWidth: '250px',
     padding: '1.5em 0 0',
     textAlign: 'center',
 
@@ -51,23 +51,23 @@ export const style = vars => ({
   },
 
   '.LogoWrapper': {
-    margin: '0 auto',
-    position: 'relative',
     minWidth: '250px',
+    margin: '0 auto',
     maxWidth: '600px',
+    position: 'relative',
 
     '.Logo': {
       float: 'left',
-      width: '100%',
       height: 'auto',
+      width: '100%',
 
       svg: {
-        width: '100%',
-        margin: '0 auto',
+        borderRadius: 0,
         display: 'block',
         float: 'none',
         height: 'auto',
-        borderRadius: 0,
+        margin: '0 auto',
+        width: '100%',
       },
     },
 
@@ -84,11 +84,11 @@ export const style = vars => ({
   },
 
   '.Menu': {
-    float: 'none',
-    textAlign: 'center',
-    padding: '3em 0 0',
-    width: '100%',
     clear: 'both',
+    float: 'none',
+    padding: '3em 0 0',
+    textAlign: 'center',
+    width: '100%',
 
     ul: {
       width: 'auto',
@@ -105,7 +105,6 @@ export const style = vars => ({
 
   p: {
     color: vars.neutral || '#c4c4c4',
-    float: 'left',
     fontSize: '1.1em',
   },
 
@@ -113,8 +112,13 @@ export const style = vars => ({
     '.LogoWrapper': {
       '.Logo': {
         float: 'left',
+        margin: '0 3% 0 0',
         width: '40%',
-        margin: '0 1em 0 0',
+      },
+
+      'h1, p': {
+        float: 'left',
+        width: '56%',
       },
     },
   },
@@ -123,6 +127,10 @@ export const style = vars => ({
     '.LogoWrapper': {
       '.Logo': {
         width: '50%',
+      },
+
+      'h1, p': {
+        width: '46%',
       },
     },
   },
