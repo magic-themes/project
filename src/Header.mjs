@@ -49,7 +49,7 @@ export const style = vars => ({
 
   '> div': {
     margin: '0 auto',
-    maxWidth: '1000px',
+    maxWidth: vars.maxWidth || '1200px',
     padding: '0 5%',
   },
 
