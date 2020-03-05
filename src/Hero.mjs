@@ -102,6 +102,12 @@ export const style = vars => ({
       width: 'auto',
     },
 
+    li: {
+      display: 'block',
+      float: 'none',
+      margin: '0 0 1em',
+    },
+
     a: {
       color: vars.primary && vars.primary.neutral || '#rebeccapurple',
 
@@ -125,6 +131,12 @@ export const style = vars => ({
         textAlign: 'left',
       },
     },
+    '.Menu': {
+      li: {
+        float: 'left',
+        margin: '0 0.25em 0',
+      },
+    }
   },
 
   [`@media screen and (min-width: ${vars.widths && vars.widths.laptop || '1024px'})`]: {
