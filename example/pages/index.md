@@ -1,4 +1,4 @@
-<Hero state='state'></Hero>
+<Hero state></Hero>
 
 <div>
 
@@ -14,13 +14,13 @@ currently, this theme is being used on the following pages:
 * [@webboot](https://webboot.org)
 * [@grundstein](https://grundstein.github.io)
 
-<h3 id='installation'>installation</h3>
+### installation
 
 <Pre>npm install --save --save-exact @magic-themes/project</Pre>
 
-<h2 id='usage'>usage</h2>
+## usage
 
-<h3 id='usage-require'>require in config.mjs:</h3>
+### #usage-require require in config.mjs:
 
 <Pre>
 // config.mjs

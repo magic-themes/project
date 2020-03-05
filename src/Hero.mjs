@@ -1,4 +1,6 @@
-export const View = ({ hero, ...state }) => {
+export const View = ({ state }) => {
+  const { hero } = state
+
   const title = Array.isArray(hero.title) ? hero.title : [hero.title]
 
   let { content } = hero
