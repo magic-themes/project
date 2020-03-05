@@ -1,4 +1,4 @@
-export const View = ({ branding, root }) =>
+export const View = ({ root }) =>
   Link({ to: root, class: 'Logo' }, [
     svg({ viewBox: '0 0 666 500', height: '50', width: '66' }, [
       path({
@@ -14,7 +14,7 @@ export const View = ({ branding, root }) =>
     ]),
   ])
 
-export const style = vars => ({
+export const style = {
   float: 'left',
   height: '2.4em',
 
@@ -30,4 +30,4 @@ export const style = vars => ({
       margin: '0.4em',
     },
   },
-})
+}

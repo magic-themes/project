@@ -30,7 +30,7 @@ export const View = ({ state }) => {
 }
 
 export const style = vars => ({
-  backgroundColor: vars.text.dark,
+  backgroundColor: vars.text && vars.text.dark || '#c4c4c4',
   display: 'inline-block',
   margin: '5vh auto',
   position: 'relative',
@@ -39,7 +39,11 @@ export const style = vars => ({
 
   '.content': {
     clear: 'both',
+    minWidth: '250px',
+    margin: '0 auto',
+    maxWidth: '600px',
     padding: '1.5em 0 0',
+    textAlign: 'center',
   },
 
   '.LogoWrapper': {
@@ -62,13 +66,12 @@ export const style = vars => ({
     },
 
     h1: {
-      color: vars.neutral,
+      color: vars.neutral || '#5a5a5a',
       fontSize: '2em',
       padding: '0',
-      textAlign: 'center',
 
       span: {
-        color: vars.primary.neutral,
+        color: vars.primary && vars.primary.neutral || '#rebeccapurple',
       },
     },
   },
@@ -85,21 +88,20 @@ export const style = vars => ({
     },
 
     a: {
-      color: vars.primary.neutral,
+      color: vars.primary && vars.primary.neutral || '#rebeccapurple',
 
       '&:hover': {
-        color: vars.primary.dark,
+        color: vars.primary && vars.primary.dark || '#412162',
       },
     },
   },
 
   p: {
-    color: vars.neutral,
+    color: vars.neutral || '#c4c4c4',
     fontSize: '1.1em',
-    textAlign: 'center',
   },
 
-  [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+  [`@media screen and (min-width: ${vars.widths && vars.widths.tablet || '500px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
         svg: {
@@ -110,7 +112,7 @@ export const style = vars => ({
     },
   },
 
-  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+  [`@media screen and (min-width: ${vars.widths && vars.widths.laptop || '1024px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
         svg: {

@@ -6,7 +6,7 @@ export const View = (props = {}, children = []) => {
     return
   }
 
-  let { branding, root } = state
+  let { branding = [], root } = state
   if (!Array.isArray(branding)) {
     branding = [branding]
   }
@@ -17,7 +17,7 @@ export const View = (props = {}, children = []) => {
     { class: 'Header' },
     div([
       Logo({ root }),
-      branding && Link({ to: root, class: 'branding' }, [span(first), rest]),
+      first && Link({ to: root, class: 'branding' }, [span(first), rest]),
       menu && Menu({ state, items: menu }),
     ]),
   )
@@ -33,7 +33,7 @@ export const style = vars => ({
   },
 
   '.branding': {
-    color: vars.neutral,
+    color: vars.neutral || '#5a5a5a',
     float: 'left',
     fontSize: '1.5em',
     lineHeight: '1',
@@ -41,7 +41,7 @@ export const style = vars => ({
     textDecoration: 'none',
 
     span: {
-      color: vars.primary.neutral,
+      color: vars.primary && vars.primary.neutral || 'rebeccapurple',
       fontSize: '1em',
       margin: '0',
     },
@@ -53,7 +53,7 @@ export const style = vars => ({
     padding: '0 5%',
   },
 
-  [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+  [`@media screen and (min-width: ${vars.widths && vars.widths.tablet || '500px'})`]: {
     '.Menu': {
       float: 'right',
       width: 'auto',
