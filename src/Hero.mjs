@@ -73,14 +73,22 @@ export const style = vars => ({
 
     h1: {
       color: vars.neutral || '#5a5a5a',
-      float: 'left',
       fontSize: '2em',
       padding: '0',
+      textAlign: 'center',
 
       span: {
         color: vars.primary && vars.primary.neutral || '#rebeccapurple',
       },
     },
+
+    p: {
+      textAlign: 'center',
+    },
+  },
+
+  p: {
+    color: vars.neutral || '#c4c4c4',
   },
 
   '.Menu': {
@@ -103,11 +111,6 @@ export const style = vars => ({
     },
   },
 
-  p: {
-    color: vars.neutral || '#c4c4c4',
-    fontSize: '1.1em',
-  },
-
   [`@media screen and (min-width: ${vars.widths && vars.widths.tablet || '500px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
@@ -119,6 +122,7 @@ export const style = vars => ({
       'h1, p': {
         float: 'left',
         width: '56%',
+        textAlign: 'left',
       },
     },
   },
