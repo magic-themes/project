@@ -83,5 +83,10 @@ Footer: use Credits module from @magic/core
 * Footer: change link colors to be readable.
 * updates for markdown state handling.
 
-##### 0.0.8 - unreleased
+##### 0.0.8
+* no errors if theme vars are not set, defaults instead
+* Hero: floating fixed
+* Header/Menu: top menu margin adjusted to font-size
+
+##### 0.0.9 - unreleased
 ...
