@@ -21,14 +21,9 @@ export const state = {
       before: ['jamstack generator', 'created by', 'Wizards & Witches'],
     },
     two: {
-      title: 'organizations',
+      title: 'projects',
       menu: [
         { to: 'https://github.com/magic/', text: '@magic' },
-        { to: 'https://github.com/magic/core/', text: '@magic/core' },
-        { to: 'https://github.com/magic-modules/', text: '@magic-modules' },
-        { to: 'https://github.com/magic-libraries/', text: '@magic-libraries' },
-        { to: 'https://github.com/magic-themes/', text: '@magic-themes' },
-        { to: 'https://github.com/magic-examples/', text: '@magic-examples' },
         { to: 'https://github.com/grundstein/', text: '@grundstein' },
         { to: 'https://github.com/webboot/', text: '@webboot' },
       ],
