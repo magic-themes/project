@@ -44,6 +44,10 @@ export const style = vars => ({
     maxWidth: '600px',
     padding: '1.5em 0 0',
     textAlign: 'center',
+
+    p: {
+      float: 'none',
+    }
   },
 
   '.LogoWrapper': {
@@ -53,7 +57,9 @@ export const style = vars => ({
     maxWidth: '600px',
 
     '.Logo': {
-      float: 'none',
+      float: 'left',
+      width: '100%',
+      height: 'auto',
 
       svg: {
         width: '100%',
@@ -67,6 +73,7 @@ export const style = vars => ({
 
     h1: {
       color: vars.neutral || '#5a5a5a',
+      float: 'left',
       fontSize: '2em',
       padding: '0',
 
@@ -98,16 +105,16 @@ export const style = vars => ({
 
   p: {
     color: vars.neutral || '#c4c4c4',
+    float: 'left',
     fontSize: '1.1em',
   },
 
   [`@media screen and (min-width: ${vars.widths && vars.widths.tablet || '500px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
-        svg: {
-          float: 'left',
-          width: '45%',
-        },
+        float: 'left',
+        width: '40%',
+        margin: '0 1em 0 0',
       },
     },
   },
@@ -115,10 +122,7 @@ export const style = vars => ({
   [`@media screen and (min-width: ${vars.widths && vars.widths.laptop || '1024px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
-        svg: {
-          float: 'left',
-          width: '50%',
-        },
+        width: '50%',
       },
     },
   },
