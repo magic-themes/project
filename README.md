@@ -88,5 +88,8 @@ Footer: use Credits module from @magic/core
 * Hero: floating fixed
 * Header/Menu: top menu margin adjusted to font-size
 
-##### 0.0.9 - unreleased
+##### 0.0.9
+Fix: Header now uses vars.maxWidth, as Footer, Hero and Page do.
+
+##### 0.0.10 - unreleased
 ...
