@@ -100,5 +100,8 @@ rename org menu in footer to projects, link to grundstein and webboot.
 ##### 0.0.12
 make sure that h1 and p in LogoWrapper never float next to each other.
 
-##### 0.0.13 - unreleased
+##### 0.0.13
+Fix: Hero layout on mobile is broken in <0.0.12
+
+##### 0.0.14 - unreleased
 ...
