@@ -91,5 +91,8 @@ Footer: use Credits module from @magic/core
 ##### 0.0.9
 Fix: Header now uses vars.maxWidth, as Footer, Hero and Page do.
 
-##### 0.0.10 - unreleased
+##### 0.0.10
+add additional org links to footer
+
+##### 0.0.11 - unreleased
 ...
