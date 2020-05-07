@@ -103,5 +103,8 @@ make sure that h1 and p in LogoWrapper never float next to each other.
 ##### 0.0.13
 Fix: Hero layout on mobile is broken in <0.0.12
 
-##### 0.0.14 - unreleased
+##### 0.0.14
+bump required node version to 14.2.0
+
+##### 0.0.15 - unreleased
 ...
