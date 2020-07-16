@@ -113,5 +113,8 @@ update Logo
 * update Logo
 * format modules
 
-##### 0.0.17 - unreleased
+##### 0.0.17
+update logo
+
+##### 0.0.18 - unreleased
 ...
