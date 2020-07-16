@@ -1,12 +1,10 @@
 export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { logo, menu, title, ...state } = props
-  if (!logo && !menu) {
-    return
-  }
+  const { menu, ...state } = props
 
   let { branding = [], root } = state
+
   if (!Array.isArray(branding)) {
     branding = [branding]
   }
@@ -16,7 +14,7 @@ export const View = (props = {}, children = []) => {
   return header(
     { class: 'Header' },
     div([
-      Logo({ root }),
+      Logo(root),
       first && Link({ to: root, class: 'branding' }, [span(first), rest]),
       menu && Menu({ state, items: menu }),
     ]),
@@ -63,7 +61,6 @@ export const style = vars => ({
 
 export const propTypes = {
   Header: [
-    { key: 'logo', type: 'string' },
     { key: 'menu', type: 'array' },
   ],
 }
