@@ -109,5 +109,9 @@ bump required node version to 14.2.0
 ##### 0.0.15
 update Logo
 
-##### 0.0.16 - unreleased
+##### 0.0.16 
+* update Logo
+* format modules
+
+##### 0.0.17 - unreleased
 ...
