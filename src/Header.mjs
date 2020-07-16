@@ -41,7 +41,7 @@ export const style = vars => ({
     textDecoration: 'none',
 
     span: {
-      color: vars.primary && vars.primary.neutral || 'rebeccapurple',
+      color: (vars.primary && vars.primary.neutral) || 'rebeccapurple',
       fontSize: '1em',
       margin: '0',
     },
@@ -53,7 +53,7 @@ export const style = vars => ({
     padding: '0 5%',
   },
 
-  [`@media screen and (min-width: ${vars.widths && vars.widths.tablet || '500px'})`]: {
+  [`@media screen and (min-width: ${(vars.widths && vars.widths.tablet) || '500px'})`]: {
     '.Menu': {
       float: 'right',
       width: 'auto',

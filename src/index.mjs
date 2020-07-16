@@ -7,7 +7,7 @@ export const state = {
   hero: {
     title: 'hero module',
     description: 'short branding slogan',
-    content: "some additional text. optional.",
+    content: 'some additional text. optional.',
     menu: [
       { to: '/#about', text: 'about' },
       { to: '/#usage', text: 'usage' },

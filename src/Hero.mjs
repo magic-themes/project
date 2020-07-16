@@ -30,7 +30,7 @@ export const View = ({ state }) => {
 }
 
 export const style = vars => ({
-  backgroundColor: vars.text && vars.text.dark || '#c4c4c4',
+  backgroundColor: (vars.text && vars.text.dark) || '#c4c4c4',
   display: 'inline-block',
   margin: '5vh auto',
   maxWidth: 'inherit',
@@ -47,7 +47,7 @@ export const style = vars => ({
 
     p: {
       float: 'none',
-    }
+    },
   },
 
   '.LogoWrapper': {
@@ -78,7 +78,7 @@ export const style = vars => ({
       textAlign: 'center',
 
       span: {
-        color: vars.primary && vars.primary.neutral || '#rebeccapurple',
+        color: (vars.primary && vars.primary.neutral) || '#rebeccapurple',
       },
     },
 
@@ -109,15 +109,15 @@ export const style = vars => ({
     },
 
     a: {
-      color: vars.primary && vars.primary.neutral || '#rebeccapurple',
+      color: (vars.primary && vars.primary.neutral) || '#rebeccapurple',
 
       '&:hover': {
-        color: vars.primary && vars.primary.dark || '#412162',
+        color: (vars.primary && vars.primary.dark) || '#412162',
       },
     },
   },
 
-  [`@media screen and (min-width: ${vars.widths && vars.widths.tablet || '500px'})`]: {
+  [`@media screen and (min-width: ${(vars.widths && vars.widths.tablet) || '500px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
         float: 'left',
@@ -136,10 +136,10 @@ export const style = vars => ({
         float: 'left',
         margin: '0 0.25em 0',
       },
-    }
+    },
   },
 
-  [`@media screen and (min-width: ${vars.widths && vars.widths.laptop || '1024px'})`]: {
+  [`@media screen and (min-width: ${(vars.widths && vars.widths.laptop) || '1024px'})`]: {
     '.LogoWrapper': {
       '.Logo': {
         width: '50%',
