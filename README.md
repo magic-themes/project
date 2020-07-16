@@ -116,5 +116,8 @@ update Logo
 ##### 0.0.17
 update logo
 
-##### 0.0.18 - unreleased
+##### 0.0.18
+move @magic-modules/no-spy to devDependencies
+
+##### 0.0.19 - unreleased
 ...
