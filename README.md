@@ -106,5 +106,8 @@ Fix: Hero layout on mobile is broken in <0.0.12
 ##### 0.0.14
 bump required node version to 14.2.0
 
-##### 0.0.15 - unreleased
+##### 0.0.15
+update Logo
+
+##### 0.0.16 - unreleased
 ...
