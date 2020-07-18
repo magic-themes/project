@@ -185,12 +185,6 @@ export default (v = {}) => {
       },
     },
 
-    '.LightSwitch': {
-      position: 'fixed',
-      bottom: '0.5em',
-      right: '0.5em',
-    },
-
     '.Gdpr, .NoSpy': {
       left: 'auto',
       right: '0.5em',
