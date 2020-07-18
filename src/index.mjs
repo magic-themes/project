@@ -105,6 +105,19 @@ export default (v = {}) => {
       color: v.text.dark,
       transition: `color ${v.fadeDuration}, background-color ${v.fadeDuration}`,
 
+      '.icon': {
+        right: '0.5em',
+        left: 'auto',
+      },
+
+      '.NoSpy': {
+        '.icon': {
+          right: 0,
+          position: 'relative',
+          display: 'block',
+        },
+      },
+
       '&.light': {
         backgroundColor: v.background.light,
         color: v.text.light,
@@ -185,21 +198,15 @@ export default (v = {}) => {
       },
     },
 
-    '.Gdpr, .NoSpy': {
+    '.NoSpy': {
+      right: '0.5em',
+      bottom: '0.5em',
       left: 'auto',
-      right: '0.5em',
 
-      '.ShowHide': {
+      '.Container': {
         left: 'auto',
-        bottom: '3em',
-        right: '0.5em',
+        right: 0,
       },
-    },
-
-    '.LightSwitch': {
-      right: '0.5em',
-      bottom: 0,
-      position: 'fixed',
     },
 
     '.GitBadges': {
