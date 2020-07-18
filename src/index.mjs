@@ -191,7 +191,7 @@ export default (v = {}) => {
       right: '0.5em',
     },
 
-    '.Gdpr': {
+    '.Gdpr, .NoSpy': {
       left: 'auto',
       right: '0.5em',
 
@@ -200,6 +200,12 @@ export default (v = {}) => {
         bottom: '3em',
         right: '0.5em',
       },
+    },
+
+    '.LightSwitch': {
+      right: '0.5em',
+      bottom: 0,
+      position: 'fixed',
     },
 
     '.GitBadges': {
