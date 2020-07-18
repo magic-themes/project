@@ -122,5 +122,8 @@ move @magic-modules/no-spy to devDependencies
 ##### 0.0.19
 reduce Header and Logo bundle sizes
 
-##### 0.0.20 - unreleased
+##### 0.0.20 
+update icon positions
+
+##### 0.0.21 - unreleased
 ...
