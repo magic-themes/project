@@ -125,5 +125,8 @@ reduce Header and Logo bundle sizes
 ##### 0.0.20 
 update icon positions
 
-##### 0.0.21 - unreleased
+##### 0.0.21
+re-update icon positions
+
+##### 0.0.22 - unreleased
 ...
