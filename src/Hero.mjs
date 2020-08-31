@@ -10,7 +10,7 @@ export const View = ({ state }) => {
 
   return div({ id: 'hero', class: 'Hero' }, [
     div({ class: 'LogoWrapper' }, [
-      Logo(state),
+      Logo(state.root),
       hero.title && h1([span(title[0]), title[1]]),
       hero.description && p(hero.description),
     ]),
