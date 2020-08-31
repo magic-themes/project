@@ -128,5 +128,8 @@ update icon positions
 ##### 0.0.21
 re-update icon positions
 
-##### 0.0.22 - unreleased
+##### 0.0.22 
+Logo in Hero gets state.root passed instead of full state
+
+##### 0.0.23 - unreleased
 ...
