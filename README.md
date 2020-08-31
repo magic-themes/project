@@ -131,5 +131,8 @@ re-update icon positions
 ##### 0.0.22 
 Logo in Hero gets state.root passed instead of full state
 
-##### 0.0.23 - unreleased
+##### 0.0.23
+* add default font size to prevent font-size: undefined; in css
+
+##### 0.0.24 - unreleased
 ...
