@@ -138,4 +138,5 @@ Logo in Hero gets state.root passed instead of full state
 bump required node version to 14.15.4
 
 ##### 0.0.25 - unreleased
+* update dependencies
 ...
