@@ -134,5 +134,8 @@ Logo in Hero gets state.root passed instead of full state
 ##### 0.0.23
 * add default font size to prevent font-size: undefined; in css
 
-##### 0.0.24 - unreleased
+##### 0.0.24
+bump required node version to 14.15.4
+
+##### 0.0.25 - unreleased
 ...
