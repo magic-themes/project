@@ -1,16 +1,16 @@
 export const View = ({ state }) => {
-  const { hero } = state
+  const { hero, url, hash, root } = state
 
   const title = Array.isArray(hero.title) ? hero.title : [hero.title]
 
-  let { content } = hero
+  let { content, menu } = hero
   if (content && !Array.isArray(content)) {
     content = [content]
   }
 
   return div({ id: 'hero', class: 'Hero' }, [
     div({ class: 'LogoWrapper' }, [
-      Logo(state.root),
+      Logo(root),
       hero.title && h1([span(title[0]), title[1]]),
       hero.description && p(hero.description),
     ]),
@@ -21,10 +21,12 @@ export const View = ({ state }) => {
         content.map(a => p(a)),
       ),
 
-    hero.menu &&
+    menu &&
       Menu({
-        items: hero.menu,
-        state,
+        url,
+        hash,
+        root,
+        menu,
       }),
   ])
 }
