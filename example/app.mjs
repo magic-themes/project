@@ -15,6 +15,8 @@ export const state = {
       light: '#e0e0e0',
     },
 
+    fontSize: '18px',
+
     link: {
       dark: '#8f6ab4',
       light: '#8f6ab4',
