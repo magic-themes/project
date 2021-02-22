@@ -1,7 +1,7 @@
 export const View = props => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { menu, url, hash, root } = props
+  const { menu, url, hash } = props
 
   let { branding = [] } = props
 
@@ -14,9 +14,9 @@ export const View = props => {
   return header(
     { class: 'Header' },
     div([
-      Logo(root),
-      first && Link({ to: root, class: 'branding' }, [span(first), rest]),
-      menu && Menu({ url, hash, root, menu }),
+      Logo(),
+      first && Link({ to: '/', class: 'branding' }, [span(first), rest]),
+      menu && Menu({ url, hash, menu }),
     ]),
   )
 }

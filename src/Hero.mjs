@@ -25,7 +25,6 @@ export const View = ({ state }) => {
       Menu({
         url,
         hash,
-        root,
         menu,
       }),
   ])
