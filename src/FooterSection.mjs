@@ -15,7 +15,7 @@ export const View = props => {
   ])
 }
 
-export const style = {
+export const style = vars => ({
   textAlign: 'left',
 
   '.Menu': {
@@ -28,4 +28,10 @@ export const style = {
       },
     },
   },
-}
+
+  [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+    float: 'left',
+    width: '30%',
+    margin: '0 3% 0 0',
+  },
+})
