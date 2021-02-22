@@ -1,7 +1,8 @@
 export * as Logo from './Logo.mjs'
+export * as Hero from './Hero.mjs'
 export * as Header from './Header.mjs'
 export * as Footer from './Footer.mjs'
-export * as Hero from './Hero.mjs'
+export * as FooterSection from './FooterSection.mjs'
 
 export const state = {
   hero: {
