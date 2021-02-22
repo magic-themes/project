@@ -10,9 +10,9 @@ project theme. It can be used as the foundational theme for any kind of project.
 
 currently, this theme is being used on the following pages:
 
-* [@magic](https://magic.github.io)
-* [@webboot](https://webboot.org)
-* [@grundstein](https://grundstein.github.io)
+* [@magic](https://magic.github.io/)
+* [@webboot](https://webboot.org/)
+* [@grundstein](https://docs.grundstein.it/)
 
 ### installation
 
