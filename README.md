@@ -139,5 +139,9 @@ Logo in Hero gets state.root passed instead of full state
 * update dependencies
 * update Header api for @magic/core 0.0.105
 
-##### 0.0.25 - unreleased
+##### 0.0.25 
+* update dependencies
+* add FooterSection
+
+##### 0.0.26 - unreleased
 ...
