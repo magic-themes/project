@@ -1,34 +1,17 @@
-export const View = (state, children) => {
-  const { one, two, three } = state.footer
+export const View = (props, children) => {
+  const { footer: foot = {}, url } = props
+  const { one, two, three } = foot
 
   return footer({ class: 'Footer' }, [
     div({ class: 'Container' }, [
       (one || two || three) &&
-        div({ class: 'Menus' }, [
-          one &&
-            div({ class: 'Child Info' }, [
-              one.title && h2(one.title),
-              one.before && one.before.map(a => p(a)),
-              one.menu && ul([one.menu.map(item => li(Link(item)))]),
-              one.after && one.after.map(a => p(a)),
-            ]),
-          two &&
-            div({ class: 'Child' }, [
-              two.title && h2(two.title),
-              two.before && two.before.map(a => p(a)),
-              two.menu && ul([two.menu.map(item => li(Link(item)))]),
-              two.after && two.after.map(a => p(a)),
-            ]),
-          three &&
-            div({ class: 'Child' }, [
-              three.title && h2(three.title),
-              three.before && three.before.map(a => p(a)),
-              three.menu && ul([three.menu.map(item => li(Link(item)))]),
-              three.after && three.after.map(a => p(a)),
-            ]),
-        ]),
+      div({ class: 'Menus' }, [
+        one && FooterSection({ class: 'Info', ...one, url }),
+        two && FooterSection({ ...two, url }),
+        three && FooterSection({ ...three, url }),
+      ]),
 
-      Credits(state),
+      Credits(),
       children,
     ]),
   ])
@@ -67,16 +50,6 @@ export const style = vars => ({
     display: 'inline-block',
     width: '100%',
     textAlign: 'center',
-  },
-
-  '.Child': {
-    textAlign: 'left',
-
-    ul: {
-      li: {
-        float: 'none',
-      },
-    },
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {

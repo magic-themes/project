@@ -14,3 +14,18 @@ export const View = props => {
     after && after.map(a => p(a)),
   ])
 }
+
+export const style = {
+  textAlign: 'left',
+
+  '.Menu': {
+    float: 'none',
+
+    ul: {
+      li: {
+        margin: '0 0 0.5em',
+        float: 'none',
+      },
+    },
+  },
+}
