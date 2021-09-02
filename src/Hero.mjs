@@ -1,5 +1,5 @@
-export const View = ({ state }) => {
-  const { hero, url, hash, root } = state
+export const View = state => {
+  const { hero, url, hash, root } = state.state || state
 
   const title = Array.isArray(hero.title) ? hero.title : [hero.title]
 
