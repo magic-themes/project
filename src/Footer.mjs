@@ -5,11 +5,11 @@ export const View = (props, children) => {
   return footer({ class: 'Footer' }, [
     div({ class: 'Container' }, [
       (one || two || three) &&
-      div({ class: 'Menus' }, [
-        one && FooterSection({ class: 'Info', ...one, url }),
-        two && FooterSection({ ...two, url }),
-        three && FooterSection({ ...three, url }),
-      ]),
+        div({ class: 'Menus' }, [
+          one && FooterSection({ class: 'Info', ...one, url }),
+          two && FooterSection({ ...two, url }),
+          three && FooterSection({ ...three, url }),
+        ]),
 
       Credits(),
       children,
